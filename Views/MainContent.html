@@ -62,7 +62,7 @@
     init()
 
     function init() {
-      var url = "https://covid19.th-stat.com/api/open/cases/sum";
+      var url = "https://covid19.th-stat.com/json/covid19v2/getSumCases.json";
       $.get(url, function (data) {
         for (const [key, value] of Object.entries(data.Province)) {
           document.getElementById("item_data").innerHTML += "<tr><td>" + key + "</td><td class='text-right'>" +

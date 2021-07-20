@@ -108,7 +108,7 @@
         init()
 
         function init() {
-            var url = "https://covid19.th-stat.com/api/open/today";
+            var url = "https://covid19.th-stat.com/json/covid19v2/getTodayCases.json";
             $.get(url, function (data) {
 
                 $("#Confirmed").html(data.Confirmed);
